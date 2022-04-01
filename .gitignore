@@ -33,3 +33,5 @@
 
 # Visual Studio cache
 .vs/
+bin/
+intermediate/

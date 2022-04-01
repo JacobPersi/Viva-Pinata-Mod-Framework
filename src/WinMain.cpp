@@ -1,5 +1,5 @@
 #include "pch.h"
 
 int main() {
-	std::cout << "Hello World!\n";
+	printf(CONSOLE_GREEN "[System]: " CONSOLE_WHITE "Hello");
 }
