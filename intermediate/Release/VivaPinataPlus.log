@@ -1,0 +1,7 @@
+﻿  pch.cpp
+  WinMain.cpp
+  Generating code
+  Compiler switch has changed, fall back to full compilation.
+  All 10 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  VivaPinataPlus.vcxproj -> E:\Code\Viva Pinata Plus\bin\Release\Viva Piñata +.exe
