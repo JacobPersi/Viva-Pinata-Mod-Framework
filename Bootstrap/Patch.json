@@ -1,0 +1,36 @@
+{
+  "PatchList": [
+    {
+      "Label": "NagBypass",
+      "Description": "NOPs some \"isLauncherRunning\" checks",
+      "Targets": [
+        {
+          "Address": "008C1C64",
+          "Target": "0F 84 4C 02 00 00",
+          "Replacement": "90 90 90 90 90 90"
+        },
+        {
+          "Address": "008C1C71",
+          "Target": "0F 84 3F 02 00 00",
+          "Replacement": "90 90 90 90 90 90"
+        }
+      ]
+    },
+    {
+      "Label": "WindowedMode",
+      "Description": "Forces DirectX PresentationParams to Windowed=True, and the WindowClass style to: FramedWindow",
+      "Targets": [
+        {
+          "Address": "007D348D",
+          "Target": "C7 46 20 00 00 00 00",
+          "Replacement": "C7 46 20 01 00 00 00"
+        }, 
+        {
+          "Address": "008C1700",
+          "Target": "68 00 00 00 80",
+          "Replacement": "68 00 00 8E 00"
+        }
+      ]
+    }
+  ]
+}

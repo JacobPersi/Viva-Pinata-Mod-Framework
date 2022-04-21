@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "U+QP2qL6DleVEwkBE61Z5N5vg6+ACLV4TbFKIZb84sxw2+JX+CENUXbUW8yKx9ZwM7CssyAitqqWyTKPkBfCww==",
+  "success": true,
+  "projectFilePath": "E:\\Code\\PinataParty\\Bootstrap\\Bootstrap.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jacob\\.nuget\\packages\\system.json\\4.7.1\\system.json.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
