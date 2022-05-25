@@ -1,5 +1,5 @@
 ﻿namespace PinataParty {
-    public class WindowedMode : Patch {
+    public class WindowedMode : SimplePatch {
         public WindowedMode() {
             Name = "Force Windowed Mode";
             Description = "Forces the game into windowed mode by altering DirectX's PresentationParams and the WindowsClass definition.";

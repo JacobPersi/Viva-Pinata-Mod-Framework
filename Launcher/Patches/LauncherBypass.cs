@@ -1,5 +1,5 @@
 ﻿namespace PinataParty {
-    public class LauncherBypass : Patch {
+    public class LauncherBypass : SimplePatch {
         public LauncherBypass() {
             Name = "Launcher Bypass";
             Description = "Avoids various 'IsLauncherRunning' checks.";

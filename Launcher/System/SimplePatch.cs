@@ -1,6 +1,5 @@
-﻿using System;
-namespace PinataParty {
-    public class Patch {
+﻿namespace PinataParty {
+    public class SimplePatch {
         protected string Name { get; set; }
         protected string Description { get; set; }
         protected PatchTarget[] Patches { get; set; }
