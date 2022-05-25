@@ -1,18 +1,28 @@
-﻿namespace PinataParty {
+﻿using System;
+
+namespace PinataParty {
     public class SimplePatch {
-        protected string Name { get; set; }
-        protected string Description { get; set; }
-        protected PatchTarget[] Patches { get; set; }
+        public IntPtr Address;
+        public byte[] TargetBytes;
+        public byte[] ReplacementBytes;
+        public bool IsValid = true;
+
+        public SimplePatch(uint address, byte[] target, byte[] replacement) {
+            if (address == uint.MinValue || target.Length != replacement.Length) { 
+                IsValid = false;
+            }
+            Address = new IntPtr(address);
+            TargetBytes = target;
+            ReplacementBytes = replacement;
+        }
 
         public bool ApplyPatch(int processId) {
-            bool result = true;
-            foreach (PatchTarget target in Patches) {
-                if (target.IsValid)
-                    result &= Win32.PatchMemory(processId, target.Address, target.ReplacementBytes);
-                else
-                    result = false;
+            if (IsValid) {
+                return Win32.PatchMemory(processId, Address, ReplacementBytes);
             }
-            return result;
+            else {
+                return false;
+            }
         }
     }
 }

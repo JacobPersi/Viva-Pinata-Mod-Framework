@@ -11,9 +11,9 @@ namespace PinataParty {
             Console.Write("Please attach your debugger and press enter to continue: ");
             Console.ReadLine();
 
-            List<Type> patchTypes = GetAllSubclassesOf(typeof(SimplePatch));
+            List<Type> patchTypes = GetAllSubclassesOf(typeof(Patch));
             foreach (Type patchType in patchTypes) {
-                ((SimplePatch)Activator.CreateInstance(patchType)).ApplyPatch(ProcessId);
+                ((Patch)Activator.CreateInstance(patchType)).ApplyPatch(ProcessId);
             }
 
             Console.Write("Patching complete! Please press enter to run the game!");
