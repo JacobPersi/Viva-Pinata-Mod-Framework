@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Code\\Viva Pinata Plus\\Bootstrap\\Bootstrap.csproj": {}
+    "E:\\Code\\Viva Pinata Plus\\Bootstrap\\Launcher.csproj": {}
   },
   "projects": {
-    "E:\\Code\\Viva Pinata Plus\\Bootstrap\\Bootstrap.csproj": {
+    "E:\\Code\\Viva Pinata Plus\\Bootstrap\\Launcher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Code\\Viva Pinata Plus\\Bootstrap\\Bootstrap.csproj",
-        "projectName": "Bootstrap",
-        "projectPath": "E:\\Code\\Viva Pinata Plus\\Bootstrap\\Bootstrap.csproj",
+        "projectUniqueName": "E:\\Code\\Viva Pinata Plus\\Bootstrap\\Launcher.csproj",
+        "projectName": "Launcher",
+        "projectPath": "E:\\Code\\Viva Pinata Plus\\Bootstrap\\Launcher.csproj",
         "packagesPath": "C:\\Users\\Jacob\\.nuget\\packages\\",
         "outputPath": "E:\\Code\\Viva Pinata Plus\\Bootstrap\\obj\\",
         "projectStyle": "PackageReference",
@@ -43,12 +43,6 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "dependencies": {
-            "System.Json": {
-              "target": "Package",
-              "version": "[4.7.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

@@ -4,8 +4,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace PinataParty.Bootstrap {
-
+namespace PinataParty {
     public static class Win32 {
 
         public static int CreateSuspended(string strFileExec, string strArguments = "") {
@@ -523,7 +522,6 @@ namespace PinataParty.Bootstrap {
             public IntPtr lpSecurityDescriptor;
             public int bInheritHandle;
         }
-
 
         public const UInt32 PROCESS_ALL_ACCESS = 0x1F0FFF;
         public const UInt32 PAGE_EXECUTE_READWRITE = 0x40;

@@ -1,58 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
-      "System.Json/4.7.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/System.Json.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Json.dll": {}
-        }
-      }
-    }
+    "net5.0": {}
   },
-  "libraries": {
-    "System.Json/4.7.1": {
-      "sha512": "XymImdgljgVEkd9trFSKWlNJac1Hr+L9lwFLQSUUQfFMkm88AHI6DINAMhpoiUWQIPLIqEjR702eydUb4Qb3Ng==",
-      "type": "package",
-      "path": "system.json/4.7.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/Xamarinmac20/_._",
-        "lib/monoandroid10/_._",
-        "lib/monotouch10/_._",
-        "lib/net461/System.Json.dll",
-        "lib/net461/System.Json.xml",
-        "lib/netstandard1.0/System.Json.dll",
-        "lib/netstandard1.0/System.Json.xml",
-        "lib/netstandard2.0/System.Json.dll",
-        "lib/netstandard2.0/System.Json.xml",
-        "lib/xamarinios10/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/Xamarinmac20/_._",
-        "ref/monoandroid10/_._",
-        "ref/monotouch10/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.json.4.7.1.nupkg.sha512",
-        "system.json.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": [
-      "System.Json >= 4.7.1"
-    ]
+    "net5.0": []
   },
   "packageFolders": {
     "C:\\Users\\Jacob\\.nuget\\packages\\": {},
@@ -61,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Code\\PinataParty\\Bootstrap\\Bootstrap.csproj",
-      "projectName": "Bootstrap",
-      "projectPath": "E:\\Code\\PinataParty\\Bootstrap\\Bootstrap.csproj",
+      "projectUniqueName": "E:\\Code\\Viva Pinata Plus\\Bootstrap\\Launcher.csproj",
+      "projectName": "Launcher",
+      "projectPath": "E:\\Code\\Viva Pinata Plus\\Bootstrap\\Launcher.csproj",
       "packagesPath": "C:\\Users\\Jacob\\.nuget\\packages\\",
-      "outputPath": "E:\\Code\\PinataParty\\Bootstrap\\obj\\",
+      "outputPath": "E:\\Code\\Viva Pinata Plus\\Bootstrap\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,12 +50,6 @@
     "frameworks": {
       "net5.0": {
         "targetAlias": "net5.0",
-        "dependencies": {
-          "System.Json": {
-            "target": "Package",
-            "version": "[4.7.1, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
@@ -118,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
       }
     }
   }
