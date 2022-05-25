@@ -1,13 +1,14 @@
 ﻿using System;
 
 namespace PinataParty {
-    public class SimplePatch {
+
+    public class SimpleMemoryPatch : IPatch {
         public IntPtr Address;
         public byte[] TargetBytes;
         public byte[] ReplacementBytes;
         public bool IsValid = true;
 
-        public SimplePatch(uint address, byte[] target, byte[] replacement) {
+        public SimpleMemoryPatch(uint address, byte[] target, byte[] replacement) {
             if (address == uint.MinValue || target.Length != replacement.Length) { 
                 IsValid = false;
             }
