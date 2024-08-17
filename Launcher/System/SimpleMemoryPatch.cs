@@ -1,29 +1,31 @@
 ﻿using System;
 
-namespace PinataParty {
+using PinataParty.Internal;
 
-    public class SimpleMemoryPatch : IPatch {
-        public IntPtr Address;
-        public byte[] TargetBytes;
-        public byte[] ReplacementBytes;
-        public bool IsValid = true;
+namespace PinataParty;
 
-        public SimpleMemoryPatch(uint address, byte[] target, byte[] replacement) {
-            if (address == uint.MinValue || target.Length != replacement.Length) { 
-                IsValid = false;
-            }
-            Address = new IntPtr(address);
-            TargetBytes = target;
-            ReplacementBytes = replacement;
-        }
+public class SimpleMemoryPatch : IPatch
+{
+	public IntPtr Address;
+	public byte[] TargetBytes;
+	public byte[] ReplacementBytes;
+	public bool IsValid = true;
 
-        public bool ApplyPatch(int processId) {
-            if (IsValid) {
-                return Win32.PatchMemory(processId, Address, ReplacementBytes);
-            }
-            else {
-                return false;
-            }
-        }
-    }
+	public SimpleMemoryPatch(uint address, byte[] target, byte[] replacement)
+	{
+		if (address == uint.MinValue || target.Length != replacement.Length)
+			IsValid = false;
+
+		Address = new IntPtr(address);
+		TargetBytes = target;
+		ReplacementBytes = replacement;
+	}
+
+	public bool Apply(int processId)
+	{
+		if (IsValid)
+			return Win32.PatchMemory(processId, Address, ReplacementBytes);
+	
+		return false;
+	}
 }
